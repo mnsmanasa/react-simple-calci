@@ -1,20 +1,11 @@
 h1, p {
   font-family: Lato;
 }
-
-tr td{
-  text-align: center;
-  border: .5px solid grey;
-}
-
-td button {
+td {
   width:23px;
   height: 23px;
   background-color: white;
   box-shadow: none;
-  border: 0
-}
-
-td.h-100 button{
-  height: 100px;
+  text-align: center;
+  border: .5px solid grey;
 }
