@@ -19,8 +19,14 @@ class Keys extends Component {
   };
 
   calculateResult = () => {
-    console.log(String(this.state.calciValue))
+    this.setState({
+      calciValue: eval(this.state.calciValue)
+    })
   };
+
+  clearCalci =()=>{
+    this.setState({calciValue: 0})
+  }
 
   render() {
     return (
@@ -60,7 +66,7 @@ class Keys extends Component {
             <tr>
               <td onClick={() => this.calciClick(".")}>.</td>
               <td onClick={() => this.calciClick("0")}>0</td>
-              <td onClick={() => this.calciClick("C")}>C</td>
+              <td onClick={this.clearCalci}>C</td>
               <td onClick={() => this.calciClick("+")}>+</td>
             </tr>
           </tbody>
