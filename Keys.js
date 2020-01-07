@@ -13,7 +13,7 @@ class Keys extends Component {
       <form>
         <table>
           <tr>
-            <td colspan="4">
+            <td colspan="5">
               <input
                 type="text"
                 name="calcinput"
@@ -26,6 +26,7 @@ class Keys extends Component {
             <td><button>2</button></td>
             <td><button>3</button></td>
             <td><button>*</button></td>
+            <td rowspan="4" class="h-100"><button>=</button></td>
           </tr>
           <tr>
             <td><button>4</button></td>
@@ -43,7 +44,7 @@ class Keys extends Component {
             <td><button>.</button></td>
             <td><button>0</button></td>
             <td><button>C</button></td>
-            <td><button>*</button></td>
+            <td><button>+</button></td>
           </tr>
         </table>
       </form>
