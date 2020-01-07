@@ -9,3 +9,7 @@ td {
   text-align: center;
   border: .5px solid grey;
 }
+
+input {
+  text-align: right;
+}
