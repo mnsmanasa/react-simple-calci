@@ -4,18 +4,25 @@ class Keys extends Component {
   constructor() {
     super();
     this.state = {
-      calciValue: ""
+      calciValue: "",
+      num: "",
+      array: []
     };
   }
 
   calciClick = num => {
-    switch (num) {
+    switch(num) {
       case "/":
-        return
+        console.log(this.state.array.join('').concat('/'))
+        break
       case "*":
       case "-":
       case "+":
-      default:
+      case ".":
+      case "C":
+      default: 
+        this.state.array.push(num)
+        console.log(this.state.array)
     }
   };
 
@@ -37,7 +44,7 @@ class Keys extends Component {
             <td onClick={() => this.calciClick(2)}>2</td>
             <td onClick={() => this.calciClick(3)}>3</td>
             <td onClick={() => this.calciClick("*")}>*</td>
-            <td rowspan="4" className="h-100">
+            <td rowSpan="4" className="h-100">
               =
             </td>
           </tr>
