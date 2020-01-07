@@ -21,7 +21,7 @@ class Keys extends Component {
   calculateResult = () => {
     this.setState({
       calciValue: eval(this.state.calciValue),
-      array: []
+      array:[eval(this.state.calciValue)]
     })
   };
 
