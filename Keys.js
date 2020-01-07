@@ -11,18 +11,19 @@ class Keys extends Component {
   }
 
   calciClick = num => {
-    switch(num) {
+    switch (num) {
       case "/":
-        console.log(this.state.array.join('').concat('/'))
-        break
+        d = (this.state.array.join("").concat("/"));
+        break;
       case "*":
       case "-":
       case "+":
       case ".":
+      case "=":
       case "C":
-      default: 
-        this.state.array.push(num)
-        console.log(this.state.array)
+      default:
+        this.state.array.push(num);
+        console.log(this.state.array);
     }
   };
 
