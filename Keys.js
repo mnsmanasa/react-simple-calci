@@ -11,7 +11,7 @@ class Keys extends Component {
   render() {
     return (
       <form>
-        <table>
+        <table cellSpacing="0">
           <tr>
             <td colspan="5">
               <input
