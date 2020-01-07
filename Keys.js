@@ -47,7 +47,7 @@ class Keys extends Component {
             <td onClick={() => this.calciClick("1")}>1</td>
             <td onClick={() => this.calciClick("2")}>2</td>
             <td onClick={() => this.calciClick("3")}>3</td>
-            <td onClick={() => this.calciClick("*")}>*</td>
+            <td onClick={() => this.calciClick("*")}>&#215;</td>
             <td rowSpan="4" className="h-100" onClick={this.calculateResult}>
               =
             </td>
@@ -56,7 +56,7 @@ class Keys extends Component {
             <td onClick={() => this.calciClick("4")}>4</td>
             <td onClick={() => this.calciClick("5")}>5</td>
             <td onClick={() => this.calciClick("6")}>6</td>
-            <td onClick={() => this.calciClick("/")}>/</td>
+            <td onClick={() => this.calciClick("/")}>&#247;</td>
           </tr>
           <tr>
             <td onClick={() => this.calciClick("7")}>7</td>
