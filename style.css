@@ -9,7 +9,13 @@ td {
   text-align: center;
   border: .5px solid grey;
 }
-
 input {
+  border: 0
+}
+input.right-align{
   text-align: right;
+}
+
+input.left-align{
+  text-align: left;
 }

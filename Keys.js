@@ -36,6 +36,7 @@ class Keys extends Component {
           <tr>
             <td colSpan="5">
               <input
+                className="right-align"
                 type="text"
                 name="calcinput"
                 value={this.state.calciValue}
