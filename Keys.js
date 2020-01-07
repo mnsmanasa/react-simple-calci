@@ -28,6 +28,10 @@ class Keys extends Component {
     this.setState({ calciValue: 0, array: [] });
   };
 
+  handleInputChange=(event)=>{
+    event.preventDefault()
+  }
+
   render() {
     return (
       <table cellSpacing="10">
@@ -39,6 +43,8 @@ class Keys extends Component {
                 type="text"
                 name="calcinput"
                 value={this.state.calciValue}
+                onChange={this.handleInputChange}
+                readOnly
               />
             </td>
           </tr>
