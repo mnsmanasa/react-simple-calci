@@ -5,7 +5,6 @@ class Keys extends Component {
     super();
     this.state = {
       calciValue: "0",
-      num: "",
       array: []
     };
   }
@@ -31,7 +30,7 @@ class Keys extends Component {
 
   render() {
     return (
-      <table cellSpacing="0">
+      <table cellSpacing="10">
         <tbody>
           <tr>
             <td colSpan="5">
