@@ -20,12 +20,13 @@ class Keys extends Component {
 
   calculateResult = () => {
     this.setState({
-      calciValue: eval(this.state.calciValue)
+      calciValue: eval(this.state.calciValue),
+      array: []
     })
   };
 
   clearCalci =()=>{
-    this.setState({calciValue: 0})
+    this.setState({calciValue: 0, array: []})
   }
 
   render() {
